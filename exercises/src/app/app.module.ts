@@ -7,6 +7,7 @@ import { WarningComponent } from "./warning/warning.component";
 import { SuccessComponent } from "./success/success.component";
 import { Exercise1Component } from "./exercise1/exercise1.component";
 import { Exercise2Component } from "./exercise2/exercise2.component";
+import { Exercise3Component } from './exercise3/exercise3.component';
 
 @NgModule({
   declarations: [
@@ -15,6 +16,7 @@ import { Exercise2Component } from "./exercise2/exercise2.component";
     SuccessComponent,
     Exercise1Component,
     Exercise2Component,
+    Exercise3Component,
   ],
   imports: [BrowserModule, FormsModule],
   providers: [],

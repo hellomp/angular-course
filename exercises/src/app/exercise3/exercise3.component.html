@@ -1,0 +1,11 @@
+<button (click)="toggleDetails()">Display Details</button>
+<p *ngIf="showDetails">Secret password = tuna</p>
+<ul>
+  <li
+    *ngFor="let click of clickList; let i = index"
+    [ngStyle]="{ backgroundColor: i > 4 ? '#2980b9' : 'transparent' }"
+    [ngClass]="{ 'white-text': i > 4 }"
+  >
+    {{ click }}
+  </li>
+</ul>

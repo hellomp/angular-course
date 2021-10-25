@@ -1,1 +1,58 @@
+<button
+  class="
+    flex
+    text-white
+    bg-indigo-500
+    border-0
+    py-2
+    px-4
+    focus:outline-none
+    hover:bg-indigo-600
+    rounded
+    cursor-pointer
+  "
+>
+  New Recipe
+</button>
+<div class="mt-4">
+  <div
+    *ngFor="let recipe of recipes"
+    class="
+      flex
+      border-2
+      rounded-lg
+      border-gray-800
+      p-4
+      sm:flex-row
+      flex-col
+      w-full
+      cursor-pointer
+    "
+  >
+    <div
+      class="
+        w-16
+        h-16
+        sm:mr-4 sm:mb-0
+        mb-4
+        inline-flex
+        items-center
+        justify-center
+        rounded-full
+        overflow-hidden
+        flex-shrink-0
+      "
+    >
+      <img [src]="recipe.imagePath" [alt]="recipe.name" class="h-full w-full" />
+    </div>
+    <div class="flex-grow">
+      <h2 class="text-white text-lg title-font font-medium mb-1">
+        {{ recipe.name }}
+      </h2>
+      <p class="text-gray-400 text-base">
+        {{ recipe.description }}
+      </p>
+    </div>
+  </div>
+</div>
 <app-recipe-item></app-recipe-item>

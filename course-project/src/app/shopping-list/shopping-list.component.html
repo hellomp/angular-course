@@ -1,7 +1,12 @@
-<div class="grid grid-cols-12">
-  <div class="col-span-10">
-    <app-shopping-edit></app-shopping-edit>
-    <hr />
-    <p>The list</p>
-  </div>
-</div>
+<section>
+  <app-shopping-edit></app-shopping-edit>
+  <h2 class="text-xl text-gray-400 font-bold my-3">Shopping List</h2>
+  <ul class="rounded-lg divide divide-y-2 border-2 border-gray-800">
+    <li
+      class="text-white flex border-gray-800 p-2 flex-col w-full cursor-pointer"
+      *ngFor="let ingredient of ingredients"
+    >
+      {{ ingredient.name }} ({{ ingredient.amount }})
+    </li>
+  </ul>
+</section>

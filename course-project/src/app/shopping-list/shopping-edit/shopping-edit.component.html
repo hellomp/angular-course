@@ -1,1 +1,90 @@
-<p>shopping-edit works!</p>
+<form class="flex flex-row">
+  <div class="grid grid-cols-4 gap-2 w-full">
+    <input
+      type="text"
+      name="name"
+      class="
+        col-span-3
+        bg-gray-800 bg-opacity-40
+        rounded
+        border-2 border-gray-800
+        focus:bg-gray-900 focus:border-indigo-900
+        text-base
+        outline-none
+        text-gray-100
+        py-2
+        px-3
+        transition-colors
+        duration-200
+        ease-in-out
+      "
+      placeholder="Name"
+    />
+    <input
+      type="text"
+      name="amount"
+      class="
+        col-span-1
+        bg-gray-800 bg-opacity-40
+        rounded
+        border-2 border-gray-800
+        focus:bg-gray-900 focus:border-indigo-900
+        text-base
+        outline-none
+        text-gray-100
+        py-2
+        px-3
+        transition-colors
+        duration-200
+        ease-in-out
+      "
+      placeholder="Amount"
+    />
+  </div>
+  <div class="flex ml-2">
+    <button
+      type="button"
+      class="
+        text-base
+        rounded-l-md
+        text-white
+        bg-indigo-500
+        hover:bg-indigo-600
+        px-4
+        py-2
+      "
+    >
+      Add
+    </button>
+    <button
+      type="button"
+      class="
+        border-l-2 border-r-2 border-indigo-400
+        text-base
+        font-medium
+        text-white
+        bg-indigo-500
+        hover:bg-indigo-600
+        px-4
+        py-2
+      "
+    >
+      Delete
+    </button>
+    <button
+      type="button"
+      class="
+        text-base
+        font-medium
+        rounded-r-md
+        text-white
+        bg-indigo-500
+        hover:bg-indigo-600
+        px-4
+        py-2
+      "
+    >
+      Clear
+    </button>
+  </div>
+</form>
